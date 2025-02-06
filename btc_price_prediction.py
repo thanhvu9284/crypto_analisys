@@ -6,6 +6,18 @@ import plotly.graph_objs as go
 from datetime import datetime
 from statsmodels.tsa.arima.model import ARIMA
 
+import subprocess
+import sys
+
+def install_missing_packages():
+    try:
+        import binance
+    except ImportError:
+        subprocess.run([sys.executable, "-m", "pip", "install", "binance"])
+
+install_missing_packages()
+
+
 # Tiêu đề ứng dụng
 st.title('Dự đoán giá Bitcoin (BTC) từ Binance với ARIMA')
 

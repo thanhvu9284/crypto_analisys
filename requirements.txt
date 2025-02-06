@@ -4,3 +4,5 @@ numpy
 requests
 plotly
 scikit-learn
+binance
+statsmodels
