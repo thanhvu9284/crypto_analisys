@@ -16,8 +16,8 @@ future_hours = {
 }
 
 st.subheader("🔮 Dự báo giá Bitcoin:")
-for key, hours in future_hours.items():
-    prediction = train_and_predict(df, hours)
-    st.write(f"📊 **{key} tới**: ${prediction:,.2f}")
+#for key, hours in future_hours.items():
+    #prediction = train_and_predict(df, hours)
+    #st.write(f"📊 **{key} tới**: ${prediction:,.2f}")
 
 st.write("📌 Dữ liệu từ Binance API và dự đoán bằng Machine Learning")
